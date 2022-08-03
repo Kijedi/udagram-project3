@@ -26,7 +26,6 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push YOUR_DOCKER_HUB/simple-node
   - docker push wkijedi/udagram-frontend:latest
   - docker push wkijedi/udagram-reverseproxy:latest
   - docker push wkijedi/udagram-api-feed:latest

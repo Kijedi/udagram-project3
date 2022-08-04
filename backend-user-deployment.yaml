@@ -16,16 +16,16 @@ spec:
         app: backend-user
     spec:
       containers:
-      - image: wkijedi/udagram-api-user:v2
+      - image: wkijedi/udagram-api-user
         name: backend-user 
         imagePullPolicy: Always  
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
+            memory: 200Mi
+            cpu: "500m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"      
+            memory: "200Mi"
+            cpu: 500m       
         env:
         - name: URL
           valueFrom:

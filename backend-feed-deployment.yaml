@@ -15,15 +15,15 @@ spec:
         app: backend-feed
     spec:
       containers:
-      - image: wkijedi/udagram-api-feed:v2
+      - image: wkijedi/udagram-api-feed
         name: backend-feed
         imagePullPolicy: Always  
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
+            memory: "250Mi"
+            cpu: "500m"
           limits:
-            memory: "1024Mi"
+            memory: "250Mi"
             cpu: "500m"                  
         env:
         - name: URL

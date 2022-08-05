@@ -5,8 +5,10 @@ data:
   AWS_PROFILE: default
   AWS_REGION: us-west-1
   JWT_SECRET: wesley
-  POSTGRESS_DB: postgres
-  POSTGRESS_HOST: cdr.cnsclzjgaph5.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  POSTGRES_USERNAME: postgres
+  POSTGRES_PASSWORD: Wesleigh#1
+  POSTGRES_HOST: cdr.cnsclzjgaph5.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100  
 metadata:
   name: env-config

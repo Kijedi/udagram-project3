@@ -4,7 +4,6 @@ metadata:
   name: backend-user
   labels:
     app: backend-user
-
 spec:
   replicas: 2
   selector:
@@ -16,16 +15,16 @@ spec:
         app: backend-user
     spec:
       containers:
-      - image: wkijedi/udagram-api-user
+      - image: wkijedi/udagram-api-user:v2
         name: backend-user 
-        imagePullPolicy: Always  
+        imagePullPolicy: Always
         resources:
           requests:
-            memory: 200Mi
-            cpu: "500m"
+            memory: "64Mi"
+            cpu: "250m"
           limits:
-            memory: "200Mi"
-            cpu: 500m       
+            memory: "1024Mi"
+            cpu: "500m"       
         env:
         - name: URL
           valueFrom:

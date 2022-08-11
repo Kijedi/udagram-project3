@@ -63,14 +63,14 @@ spec:
               key: POSTGRES_HOST
         - name: POSTGRES_PASSWORD
           valueFrom:
-            secretKeyRef:
-              name: env-secret
+            configMapKeyRef:
+              name: env-config
               key: POSTGRES_PASSWORD
         - name: POSTGRES_USERNAME
           valueFrom:
-            secretKeyRef:
-              name: env-secret
-              key: POSTGRES_USERNAME      
+            configMapKeyRef:
+              name: env-config
+              key: POSTGRES_USERNAME
         volumeMounts:
         - name: aws-secret
           mountPath: "/root/.aws/"

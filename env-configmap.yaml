@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: arn:aws:s3:::udagram-370849164177-devInf
+  AWS_BUCKET: udagram-370849164177-dev
   AWS_PROFILE: default
   AWS_REGION: us-west-1
   JWT_SECRET: wesley

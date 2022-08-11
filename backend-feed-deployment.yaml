@@ -5,7 +5,7 @@ metadata:
     app: backend-feed
   name: backend-feed
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: backend-feed
@@ -21,10 +21,7 @@ spec:
         resources:
           requests:
             memory: "1024Mi"
-            cpu: "450m"
-          limits:
-            memory: "2000Mi"
-            cpu: "500m"                 
+            cpu: "450m"               
         env:
         - name: URL
           valueFrom:
